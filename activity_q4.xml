@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/a_btn"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:text="@string/q_n_4"
+                android:textColor="@color/tc_bl"
+                android:textSize="@dimen/text_size_24" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:text="@string/q4"
+                android:textColor="@color/tc_bl"
+                android:textSize="@dimen/text_size_16" />
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/q4_a_f1"
+                android:textColor="@color/tc_bl"
+                android:textSize="@dimen/text_size_16"
+                android:onClick="rb1Listener"/>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/q4_a_r1"
+                android:textColor="@color/tc_bl"
+                android:textSize="@dimen/text_size_16"
+                android:onClick="rb2Listener"/>
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/q4_a_f2"
+                android:textColor="@color/tc_bl"
+                android:textSize="@dimen/text_size_16"
+                android:onClick="rb3Listener"/>
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:text="@string/q4_a_f3"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_16"
+                android:onClick="rb4Listener"/>
+
+
+
+
+            <Button
+                android:id="@+id/a_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_16"
+                android:text="@string/submit_answer"
+                android:onClick="a_btnListener" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
